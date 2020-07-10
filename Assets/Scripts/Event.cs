@@ -1,10 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 [CreateAssetMenu(fileName = "Event", menuName = "ScriptableObjects/Event", order = 1)]
 public class Event : ScriptableObject
 {
-    [SerializeField] private string name;
-    [SerializeField] private List<ItemSlot> items;
+    [TextArea] public string description;
+
+    [TextArea] public string succesMessage;
+    [TextArea] public string failMessage;
+
+
+    public List<ItemSlot> Items;
 }

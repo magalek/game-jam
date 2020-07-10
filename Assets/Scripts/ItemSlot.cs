@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class ItemSlot : MonoBehaviour
+public class ItemSlot 
 {
-    [SerializeField] private Item item;
-    [SerializeField] [TextArea] private string winMessage;
-    [SerializeField] [TextArea] private string loseMessage;
+    public Item item;
+    public int succesChance;
 }
