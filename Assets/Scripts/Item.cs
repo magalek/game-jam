@@ -7,6 +7,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Item", menuName = "ScriptableObjects/Item", order = 1)]
 public class Item : ScriptableObject
 {
-    [TextArea] public string succesMessage;
+    private ItemSlot parent;
+
+    [TextArea] public string firstSuccesMessage;
+    [TextArea] public string secondSuccesMessage;
     [TextArea] public string failMessage;
+
+    public void SetParent(ItemSlot slot) {
+        parent = slot;
+    }
 }
