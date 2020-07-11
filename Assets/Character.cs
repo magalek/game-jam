@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
-    private void Awake() {
-        DontDestroyOnLoad(gameObject);
-    }
+    public static Character Instance;
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            SceneManager.LoadScene(1);
+    private void Awake() {
+        if (Instance == null) {
+            Instance = this;
         }
-    }
+        else if (Instance != this) {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }   
 }

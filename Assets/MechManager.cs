@@ -9,13 +9,12 @@ public class MechManager : MonoBehaviour
 
     private void Start() {
         GameObject character = GameObject.Find("Character");
-
         GameObject inventory = GameObject.Find("Inventory Panel");
-
-        character.GetComponent<CharacterMovement>().CanMove = false;
 
         foreach (Item item in character.GetComponent<Inventory>().items) {
             inventory.GetComponentInChildren<InventoryContainer>().AddItemToSlot(item);
         }
+
+        Destroy(character);
     }
 }
