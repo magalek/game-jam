@@ -19,10 +19,9 @@ MonoBehaviour:
   succesMessage: ' The meteor was destroyed because {0}! Yay! '
   failMessage: ' {0} but that didnt helped us. The meteor fell on our favorite burger
     shop during a free giveaway. A lot of people became barbecue :O'
+  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 07a6033955ff60f408316d6f2338e168, type: 2}
     option: 0
-    succesChance: 100
   - item: {fileID: 11400000, guid: 8b082a0485b10df4bb84f9f189f9ab84, type: 2}
     option: 0
-    succesChance: 100

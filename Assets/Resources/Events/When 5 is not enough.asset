@@ -18,6 +18,7 @@ MonoBehaviour:
   succesMessage: 
   failMessage: '{0} and now the opossums are going wild, not only the hedgehogs are
     in danger, but now they are onto the weasels.'
+  eventImage: {fileID: 21300000, guid: 4214388a32494d94d874d4a4b51d11f3, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 8b082a0485b10df4bb84f9f189f9ab84, type: 2}
     option: 0

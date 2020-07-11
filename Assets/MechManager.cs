@@ -28,6 +28,8 @@ public class MechManager : MonoBehaviour
         canvasAnimator.SetTrigger("Swipe");
         Event currentEvent = GameManager.Instance.currentEvent;
 
+        ResultScreenManager.Instance.resultImage.sprite = currentEvent.eventImage;
+
         List<Slot> usedSlots = mechContainer.slots.Where(i => i.item != null).ToList();
 
         bool success = false;
@@ -44,6 +46,5 @@ public class MechManager : MonoBehaviour
         else {
             textObject.text = string.Format(currentEvent.failMessage, usedSlots[Random.Range(0, usedSlots.Count)].item.failMessage);
         }
-
     }
 }

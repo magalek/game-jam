@@ -18,10 +18,9 @@ MonoBehaviour:
   succesMessage: Nice! {0} so the girls decided to go home and focus on studying.
   failMessage: ' {0} and the girls found a shopping mall where they spent the whole
     day being unproductive.'
+  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 6433ce0b69d8ab4438575468c2ec85fa, type: 2}
     option: 0
-    succesChance: 100
   - item: {fileID: 11400000, guid: 7834bda6851f3e94880d0b8a8bb51a72, type: 2}
     option: 0
-    succesChance: 100
