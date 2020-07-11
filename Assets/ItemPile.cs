@@ -62,7 +62,7 @@ public class ItemPile : MonoBehaviour
         }
 
         progressBar.fillAmount = 0;
-        Item itemToAdd = availableItems[0];
+        Item itemToAdd = availableItems[Random.Range(0, availableItems.Count)];
         character.GetComponent<Inventory>().AddItem(itemToAdd);
         CanHarvest = true;
         character.GetComponent<CharacterMovement>().CanMove = true;
