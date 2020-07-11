@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Plant
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  firstSuccesMessage: 'The plant was so hungry, that it '
+  firstSuccesMessage: The plant is a strong allergen
   secondSuccesMessage: 
-  failMessage: It's a plant, what did you expect?
+  failMessage: It's just a plant
