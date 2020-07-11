@@ -17,7 +17,7 @@ MonoBehaviour:
   succesMessage: The cats runned away because {0}. People came back to their responsibilities.
   failMessage: '  {0} but nothing matters now. Those cats are still so adorable and
     fluffy... :O'
-  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
+  eventImage: {fileID: 21300000, guid: 9659ed0804a6b614388f6468ff31fc71, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2, type: 2}
     option: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   succesMessage: '{0} so the cows runned away from the city. Not good, not terrible. '
   failMessage: '{0} but the cows we''re not amussed. They now developed a taste for
     human flesh, and ate a whole school trip.'
-  eventImage: {fileID: 21300000, guid: 1a00ee45a8ae95141be807d14eb7f940, type: 3}
+  eventImage: {fileID: 21300000, guid: ec8bb5063ddc7cc4ab972d602d911bf1, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 1f804f164699dbf4f8a9fcee117e27d1, type: 2}
     option: 0

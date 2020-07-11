@@ -16,7 +16,7 @@ MonoBehaviour:
     to smash everything! We had some weapons stored somewhere... but where? '
   succesMessage: ' Hurray! The mecha monster runned away because {0} .'
   failMessage: ' {0} and the mecha monster shmashed a lot of things... Nice job >:('
-  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
+  eventImage: {fileID: 21300000, guid: dfb31420cd67dfe4fa48b7633442c9ba, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 6433ce0b69d8ab4438575468c2ec85fa, type: 2}
     option: 1
