@@ -1138,7 +1138,7 @@ PrefabInstance:
     - target: {fileID: 7859801262262741601, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
       propertyPath: m_Name
-      value: Pile of Items
+      value: Item Pile
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e8a353abbe6fd745b7a3ba836009521, type: 3}
