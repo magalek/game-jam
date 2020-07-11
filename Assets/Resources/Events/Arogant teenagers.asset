@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b22943f423dca34da0d2754081e2925, type: 3}
+  m_Name: Arogant teenagers
+  m_EditorClassIdentifier: 
+  description: A dozen young girls, deprived of the will to live, came out on the
+    streets of the city!
+  succesMessage: Nice!  {0} so the girls went home and focused on studying.
+  failMessage: ' {0} and the girls found a shopping mall where they spent the whole
+    day unproductive.'
+  Items:
+  - item: {fileID: 0}
+    option: 0
+    succesChance: 0
+  - item: {fileID: 0}
+    option: 0
+    succesChance: 0

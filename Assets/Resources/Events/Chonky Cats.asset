@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b22943f423dca34da0d2754081e2925, type: 3}
+  m_Name: Chonky Cats
+  m_EditorClassIdentifier: 
+  description: 'Three Chonky cats appeared in the south part of the city. People
+    stopped doing their jobs just to pet those creatures! '
+  succesMessage: The cats runned away becouse {0}. People came back to their responsibilities.
+  failMessage: '  {0} and it didnt matter. Those cats are still adorable and fluffy.'
+  Items: []
