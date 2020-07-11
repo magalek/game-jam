@@ -13,6 +13,8 @@ public class ItemPile : MonoBehaviour
     [SerializeField] private Image progressBar;
     [SerializeField] private TextMeshProUGUI interactText;
 
+    [SerializeField] private List<Item> availableItems;
+
     private SpriteRenderer renderer;
 
     private bool canHarvest;
@@ -24,7 +26,7 @@ public class ItemPile : MonoBehaviour
         set {
             canHarvest = value;
             renderer.color = value == true ? Color.green : Color.red;
-        } 
+        }
     }
 
     private void Start() {
@@ -39,7 +41,7 @@ public class ItemPile : MonoBehaviour
         if (Input.GetKey(KeyCode.E)) {
             Debug.Log("Pressed E");
             if (CanHarvest) {
-                StartCoroutine(HarvestCoroutine(collision.GetComponent<CharacterMovement>()));
+                StartCoroutine(HarvestCoroutine(collision.gameObject));
             }
         }
     }
@@ -48,19 +50,23 @@ public class ItemPile : MonoBehaviour
         interactText.gameObject.SetActive(false);
     }
 
-    private IEnumerator HarvestCoroutine(CharacterMovement characterMovement) {
-        characterMovement.GetComponent<CharacterMovement>().CanMove = false;
-        Debug.Log("Entered coroutine");
+    private IEnumerator HarvestCoroutine(GameObject character) {
+        character.GetComponent<CharacterMovement>().CanMove = false;
+
         CanHarvest = false;
         interactText.gameObject.SetActive(false);
+
         for (int i = 0; i < harvestTime; i++) {
             yield return new WaitForSeconds(1);
             progressBar.fillAmount = (1f/harvestTime) * (i + 1);
         }
-        Debug.Log("Harvested");
+
         progressBar.fillAmount = 0;
+        Item itemToAdd = availableItems[0];
+        character.GetComponent<Inventory>().AddItem(itemToAdd);
         CanHarvest = true;
-        characterMovement.GetComponent<CharacterMovement>().CanMove = true;
-        ItemPopup.Show();
+        character.GetComponent<CharacterMovement>().CanMove = true;
+
+        ItemPopup.Show(itemToAdd);
     }
 }
