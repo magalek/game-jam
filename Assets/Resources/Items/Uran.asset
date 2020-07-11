@@ -15,4 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   firstSuccesMessage: 
   secondSuccesMessage: 
-  failMessage: 
+  failMessage: Cyborg used the elemental rock, but it only glows nicely

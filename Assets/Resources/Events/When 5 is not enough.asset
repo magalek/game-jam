@@ -16,6 +16,6 @@ MonoBehaviour:
     in nearby forests - they steal all the apples from the hedgehogs. Its not like
     we cannot live without the hedgehogs, but it still should be dealt with.
   succesMessage: 
-  failMessage: '{0} and the opossums are going wild, not only the hedgehogs are in
-    danger, but now they are onto the weasels.'
+  failMessage: '{0} and now the opossums are going wild, not only the hedgehogs are
+    in danger, but now they are onto the weasels.'
   Items: []
