@@ -1958,6 +1958,7 @@ GameObject:
   - component: {fileID: 1204226343}
   - component: {fileID: 1204226342}
   - component: {fileID: 1204226341}
+  - component: {fileID: 1204226344}
   m_Layer: 5
   m_Name: Grid
   m_TagString: Untagged
@@ -2060,6 +2061,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204226339}
   m_CullTransparentMesh: 0
+--- !u!114 &1204226344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204226339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf808fb338a336f4b81dce5a93231647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
 --- !u!1001 &1205919115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3369,6 +3383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf808fb338a336f4b81dce5a93231647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slots: []
 --- !u!1 &1625112516
 GameObject:
   m_ObjectHideFlags: 0
