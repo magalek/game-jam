@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Uran
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c5be0cb0210c3be47bc7863850f8488c, type: 3}
   firstSuccesMessage: Cyborg used the elemental rock as fuel for it's weapon
   secondSuccesMessage: 
   failMessage: Cyborg used the elemental rock - it only glows nicely

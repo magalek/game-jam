@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Watter bucket
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7519f3d690a3e7546971583156b931ff, type: 3}
   firstSuccesMessage: 'Cyborg spilled the water over '
   secondSuccesMessage: 
   failMessage: Cyborg tripped and spilled the water all over the place and fell into

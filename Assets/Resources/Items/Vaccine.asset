@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Vaccine
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 9405b242770ebbc468a8cc4f86ed476f, type: 3}
   firstSuccesMessage: Cyborg showed the syringe with some random vaccine
   secondSuccesMessage: 
   failMessage: Cyborg froze in place because he focused too much on vaccine conspiracies

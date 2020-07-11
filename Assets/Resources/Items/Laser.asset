@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Laser
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5f8d6de3fcfc9e14e8e5b3dabbe0bd85, type: 3}
   firstSuccesMessage: 'Cyborg hit it with the laser '
   secondSuccesMessage: 
   failMessage: Cyborg flashed the laser in his own eyes

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Shovel
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2a92faa098597b34aad12a1857acd0b2, type: 3}
+  sprite: {fileID: 21300000, guid: f6c9bbd17abf07043ade2f5b9be63a2c, type: 3}
   firstSuccesMessage: 'Cyborg dug a big hole '
   secondSuccesMessage: Cyborg whacked it with the shovel
   failMessage: Your cyborg broke the shovel
