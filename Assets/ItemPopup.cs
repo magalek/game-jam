@@ -14,7 +14,7 @@ public class ItemPopup : MonoBehaviour
     private void Awake() {
         animator = GetComponent<Animator>();
         textObject = GetComponentInChildren<TextMeshProUGUI>();
-        imageObject = GetComponentInChildren<Image>();
+        imageObject = transform.Find("Image").GetComponentInChildren<Image>();
     }
 
     public static void Show(Item item) {
