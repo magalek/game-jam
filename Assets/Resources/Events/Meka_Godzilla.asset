@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b22943f423dca34da0d2754081e2925, type: 3}
+  m_Name: Meka_Godzilla
+  m_EditorClassIdentifier: 
+  description: 'A mechanical monstrosity aproaches the city! Its huge, and wants
+    to smash everything! '
+  succesMessage: ' Hurray! The mecha monster runned away becouse {0} .'
+  failMessage: ' {0} and the mecha monster shmashed a lot of things... Nice job >:('
+  Items: []
