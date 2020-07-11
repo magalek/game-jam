@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class ItemPile : MonoBehaviour
 {
+    [Header("Customizable Fields")]
+    [SerializeField] int harvestTime;
+    
+    [Header("References")]
     [SerializeField] private Image progressBar;
     [SerializeField] private TextMeshProUGUI interactText;
-
-    [SerializeField] int harvestTime;
 
     private SpriteRenderer renderer;
 

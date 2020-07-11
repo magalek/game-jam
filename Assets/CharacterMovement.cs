@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    [Header("Customizable Fields")]
     [SerializeField] [Range(10, 100)] private float speed = 10;
 
     private void Update() {

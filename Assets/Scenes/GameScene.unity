@@ -983,6 +983,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1904905495029933108, guid: 3e8a353abbe6fd745b7a3ba836009521,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1930945412}
     - target: {fileID: 3285341547386984683, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1037,11 +1042,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5519293384903790192, guid: 3e8a353abbe6fd745b7a3ba836009521,
-        type: 3}
-      propertyPath: harvestTime
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7859801262262741601, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
