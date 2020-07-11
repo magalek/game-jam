@@ -17,4 +17,7 @@ MonoBehaviour:
   succesMessage: The cats runned away because {0}. People came back to their responsibilities.
   failMessage: '  {0} but nothing matters now. Those cats are still so adorable and
     fluffy... :O'
-  Items: []
+  Items:
+  - item: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2, type: 2}
+    option: 0
+    succesChance: 50

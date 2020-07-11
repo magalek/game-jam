@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: The lack of peanut butter in the city of Modar caused riots. Don't
     let people wait for their favorite snack, do something!
-  succesMessage: 
+  succesMessage: '{0} so the city is saved!'
   failMessage: People won't tolerate this anymore, the peanut butter revolution is
     upon us and the fact that {0} is unimportant.
-  Items: []
+  Items:
+  - item: {fileID: 11400000, guid: 17099adfe55159b4ebacc772fddd1672, type: 2}
+    option: 0
+    succesChance: 60
