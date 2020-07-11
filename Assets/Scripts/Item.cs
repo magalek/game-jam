@@ -10,7 +10,7 @@ public class Item : ScriptableObject
 {
     private ItemSlot parent;
 
-    public Texture2D image;
+    public Sprite sprite;
 
     [TextArea] public string firstSuccesMessage;
     [TextArea] public string secondSuccesMessage;

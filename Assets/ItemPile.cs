@@ -6,10 +6,14 @@ using UnityEngine.UI;
 
 public class ItemPile : MonoBehaviour
 {
+    [Header("Customizable Fields")]
+    [SerializeField] int harvestTime;
+    
+    [Header("References")]
     [SerializeField] private Image progressBar;
     [SerializeField] private TextMeshProUGUI interactText;
 
-    [SerializeField] int harvestTime;
+    [SerializeField] private List<Item> availableItems;
 
     private SpriteRenderer renderer;
 
@@ -22,7 +26,7 @@ public class ItemPile : MonoBehaviour
         set {
             canHarvest = value;
             renderer.color = value == true ? Color.green : Color.red;
-        } 
+        }
     }
 
     private void Start() {
@@ -36,7 +40,9 @@ public class ItemPile : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E)) {
             Debug.Log("Pressed E");
-            if (CanHarvest) StartCoroutine(HarvestCoroutine());
+            if (CanHarvest) {
+                StartCoroutine(HarvestCoroutine(collision.gameObject));
+            }
         }
     }
 
@@ -44,18 +50,23 @@ public class ItemPile : MonoBehaviour
         interactText.gameObject.SetActive(false);
     }
 
-    private IEnumerator HarvestCoroutine() {
-        Debug.Log("Entered coroutine");
+    private IEnumerator HarvestCoroutine(GameObject character) {
+        character.GetComponent<CharacterMovement>().CanMove = false;
+
         CanHarvest = false;
         interactText.gameObject.SetActive(false);
+
         for (int i = 0; i < harvestTime; i++) {
             yield return new WaitForSeconds(1);
             progressBar.fillAmount = (1f/harvestTime) * (i + 1);
         }
-        Debug.Log("Harvested");
-        progressBar.fillAmount = 0;
-        CanHarvest = true;
 
-        ItemPopup.Show();
+        progressBar.fillAmount = 0;
+        Item itemToAdd = availableItems[Random.Range(0, availableItems.Count)];
+        character.GetComponent<Inventory>().AddItem(itemToAdd);
+        CanHarvest = true;
+        character.GetComponent<CharacterMovement>().CanMove = true;
+
+        ItemPopup.Show(itemToAdd);
     }
 }
