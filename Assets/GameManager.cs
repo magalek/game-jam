@@ -66,8 +66,10 @@ public class GameManager : MonoBehaviour
         Character.Instance.GetComponent<CharacterMovement>().CanMove = false;
         eventPanel.SetActive(true);
         eventPanel.GetComponentInChildren<Button>().onClick.AddListener(HideEventPanel);
-        TextMeshProUGUI text = eventPanel.GetComponentInChildren<TextMeshProUGUI>();
-        text.text = currentEvent.description;
+        TextMeshProUGUI description = eventPanel.GetComponent<EventMessage>().description;
+        TextMeshProUGUI title = eventPanel.GetComponent<EventMessage>().title;
+        description.text = currentEvent.description;
+        title.text = currentEvent.name;
     }
 
     private void Update() {
