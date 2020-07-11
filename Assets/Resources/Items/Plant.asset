@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
-  m_Name: "\u0141opata"
+  m_Name: Plant
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2a92faa098597b34aad12a1857acd0b2, type: 3}
-  firstSuccesMessage: "Wykopales wielki r\xF3w"
-  secondSuccesMessage: "Rzuci\u0142e\u015B \u0142opat\u0105"
-  failMessage: "\u0141opata si\u0119 z\u0142ama\u0142a"
+  sprite: {fileID: 0}
+  firstSuccesMessage: 'The plant was so hungry, that it '
+  secondSuccesMessage: 
+  failMessage: It's a plant, what did you expect?

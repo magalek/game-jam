@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: Arogant teenagers
   m_EditorClassIdentifier: 
   description: A dozen young girls, deprived of the will to live, came out on the
-    streets of the city!
-  succesMessage: Nice!  {0} so the girls went home and focused on studying.
+    streets of the city! Do something! I would send them to a hospital or a mine
+    - that would theach them!
+  succesMessage: Nice! {0} so the girls decided to go home and focus on studying.
   failMessage: ' {0} and the girls found a shopping mall where they spent the whole
-    day unproductive.'
+    day being unproductive.'
   Items:
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 6433ce0b69d8ab4438575468c2ec85fa, type: 2}
     option: 0
-    succesChance: 0
+    succesChance: 50
   - item: {fileID: 0}
     option: 0
     succesChance: 0

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b22943f423dca34da0d2754081e2925, type: 3}
   m_Name: Chonky Cats
   m_EditorClassIdentifier: 
-  description: 'Three Chonky cats appeared in the south part of the city. People
-    stopped doing their jobs just to pet those creatures! '
-  succesMessage: The cats runned away becouse {0}. People came back to their responsibilities.
-  failMessage: '  {0} and it didnt matter. Those cats are still adorable and fluffy.'
+  description: Three Chonky cats appeared in the south part of the city. People stopped
+    doing their jobs just to pet those creatures and our ecconomy is falling apart!
+  succesMessage: The cats runned away because {0}. People came back to their responsibilities.
+  failMessage: '  {0} but nothing matters now. Those cats are still so adorable and
+    fluffy... :O'
   Items: []

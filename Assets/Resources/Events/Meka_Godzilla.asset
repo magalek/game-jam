@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Meka_Godzilla
   m_EditorClassIdentifier: 
   description: 'A mechanical monstrosity aproaches the city! Its huge, and wants
-    to smash everything! '
-  succesMessage: ' Hurray! The mecha monster runned away becouse {0} .'
+    to smash everything! We had some weapons stored somewhere... but where? '
+  succesMessage: ' Hurray! The mecha monster runned away because {0} .'
   failMessage: ' {0} and the mecha monster shmashed a lot of things... Nice job >:('
-  Items: []
+  Items:
+  - item: {fileID: 11400000, guid: 6433ce0b69d8ab4438575468c2ec85fa, type: 2}
+    option: 1
+    succesChance: 50
+  - item: {fileID: 11400000, guid: 07a6033955ff60f408316d6f2338e168, type: 2}
+    option: 0
+    succesChance: 60

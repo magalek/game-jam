@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Meteor
   m_EditorClassIdentifier: 
   description: Listen! The recent seismic activity on the sun coused a lot of interplanetary
-    tension in our solar system. That mauch tension in combination with gamma rays
+    tension in our solar system. That much tension in combination with gamma rays
     affected the blabl...  Well, it doesnt matter - long story short, a meteor is
-    comming to earth!
+    coming to earth!
   succesMessage: ' The meteor was destroyed because {0}! Yay! '
   failMessage: ' {0} but that didnt helped us. The meteor fell on our favorite burger
     shop during a free giveaway. A lot of people became barbecue :O'
