@@ -15,4 +15,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   firstSuccesMessage: Cyborg used the elemental rock as fuel for it's weapon
   secondSuccesMessage: 
-  failMessage: Cyborg used the elemental rock, but it only glows nicely
+  failMessage: Cyborg used the elemental rock - it only glows nicely
