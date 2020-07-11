@@ -10,7 +10,7 @@ public class Character : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.S)) {
+        if (Input.GetKeyDown(KeyCode.P)) {
             SceneManager.LoadScene(1);
         }
     }

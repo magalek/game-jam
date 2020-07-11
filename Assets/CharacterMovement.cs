@@ -11,6 +11,13 @@ public class CharacterMovement : MonoBehaviour
 
     public bool CanMove { get; set; } = true;
 
+    private bool isMoving;
+    private Animator animator;
+
+    private void Awake() {
+        animator = GetComponent<Animator>();
+    }
+
     private void Update() {
         if (CanMove) Move();
     }
@@ -19,8 +26,13 @@ public class CharacterMovement : MonoBehaviour
         float xAxis = Input.GetAxisRaw("Horizontal");
         float yAxis = Input.GetAxisRaw("Vertical");
 
+        if (xAxis != 0) {
+            GetComponent<SpriteRenderer>().flipX = xAxis > 0 ? true : false;
+        }
+
+
         if (xAxis != 0 || yAxis != 0) {
-            GetComponent<SpriteRenderer>().flipX = xAxis > 0 ? false : true;
+            animator.SetBool("IsMoving", true);
 
             Vector3 moveVector = new Vector3(xAxis, yAxis, 0);
 
@@ -28,5 +40,6 @@ public class CharacterMovement : MonoBehaviour
 
             transform.Translate(moveVector * (Time.deltaTime * speed));
         }
+        else animator.SetBool("IsMoving", false);
     }
 }
