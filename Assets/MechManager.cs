@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MechManager : MonoBehaviour
 {
     public MechContainer mechContainer;
     public InventoryContainer inventoryContainer;
+
+    [SerializeField] private TextMeshProUGUI textObject;
+    [SerializeField] private Animator canvasAnimator;
 
     private void Start() {
         GameObject character = GameObject.Find("Character");
@@ -16,5 +22,14 @@ public class MechManager : MonoBehaviour
         }
 
         Destroy(character);
+    }
+
+    public void SwipeScreen() {
+        canvasAnimator.SetTrigger("Swipe");
+        Event currentEvent = GameManager.Instance.currentEvent;
+
+        List<Slot> availableItems = mechContainer.slots.Where(i => i.item != null).ToList();
+
+        textObject.text = string.Format(currentEvent.failMessage, availableItems[Random.Range(0, availableItems.Count)].item.failMessage);
     }
 }

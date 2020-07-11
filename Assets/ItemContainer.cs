@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemContainer : MonoBehaviour
 {
-    [SerializeField] private List<Slot> slots;
+    public List<Slot> slots;
 
     public MechManager manager;
 

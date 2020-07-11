@@ -22,16 +22,13 @@ public class GameManager : MonoBehaviour
     private void Awake() {
         if (Instance == null) {
             Instance = this;
+            SceneManager.sceneLoaded += StartNewEvent;
         }
         else if (Instance != this) {
             Destroy(gameObject);
         }
 
-        allEvents = Resources.LoadAll<Event>("Events").ToList();
-
-        StartNewEvent();
-  
-        SceneManager.sceneLoaded += StartNewEvent;
+        allEvents = Resources.LoadAll<Event>("Events").ToList();        
 
         DontDestroyOnLoad(gameObject);
     }
@@ -76,9 +73,6 @@ public class GameManager : MonoBehaviour
     private void Update() {
         if (Input.GetKeyDown(KeyCode.P)) {
             LoadScene(1);
-        }
-        if (Input.GetKeyDown(KeyCode.H)) {
-            SetEvent();
         }
     }
 }
