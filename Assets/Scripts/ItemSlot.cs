@@ -8,5 +8,5 @@ public class ItemSlot
 {
     public Item item;
     public Option option;
-    public int succesChance;
+    //public int succesChance;
 }

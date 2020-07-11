@@ -28,8 +28,22 @@ public class MechManager : MonoBehaviour
         canvasAnimator.SetTrigger("Swipe");
         Event currentEvent = GameManager.Instance.currentEvent;
 
-        List<Slot> availableItems = mechContainer.slots.Where(i => i.item != null).ToList();
+        List<Slot> usedSlots = mechContainer.slots.Where(i => i.item != null).ToList();
 
-        textObject.text = string.Format(currentEvent.failMessage, availableItems[Random.Range(0, availableItems.Count)].item.failMessage);
+        bool success = false;
+
+        foreach (var slot in usedSlots) {
+            success = currentEvent.Items.Any(i => i.item == slot.item);
+            if (success) break;
+        }
+
+        if (success) {
+            ItemSlot itemWhichSucceded = currentEvent.Items[Random.Range(0, currentEvent.Items.Count)];
+            textObject.text = string.Format(currentEvent.succesMessage, itemWhichSucceded.option == Option.First ? usedSlots[Random.Range(0, usedSlots.Count)].item.firstSuccesMessage : usedSlots[Random.Range(0, usedSlots.Count)].item.secondSuccesMessage);
+        }
+        else {
+            textObject.text = string.Format(currentEvent.failMessage, usedSlots[Random.Range(0, usedSlots.Count)].item.failMessage);
+        }
+
     }
 }

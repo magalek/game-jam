@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: A huge slime aproaches the city! It looks like a big pile of fertilizer
     that should be washed away.
-  succesMessage: ' Hurray! The slimy monster was destroyed because {0} .'
+  succesMessage: ' Hurray! The slimy monster was destroyed because {0}.'
   failMessage: ' {0} and the slimy monster swallowed a lot of things!'
   Items:
   - item: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2, type: 2}
     option: 0
-    succesChance: 100
