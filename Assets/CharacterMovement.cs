@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    [SerializeField] [Range(10, 100)] private float speed = 10;
+
     private void Update() {
         Move();
     }
@@ -20,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
 
             moveVector.Normalize();
 
-            transform.Translate(moveVector * 0.3f);
+            transform.Translate(moveVector * (Time.deltaTime * speed));
         }
     }
 }
