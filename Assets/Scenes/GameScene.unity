@@ -3210,7 +3210,7 @@ PrefabInstance:
     - target: {fileID: 4844748499153833499, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
       propertyPath: availableItems.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4844748499153833499, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
@@ -3223,6 +3223,24 @@ PrefabInstance:
       propertyPath: availableItems.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 6433ce0b69d8ab4438575468c2ec85fa,
+        type: 2}
+    - target: {fileID: 4844748499153833499, guid: 3e8a353abbe6fd745b7a3ba836009521,
+        type: 3}
+      propertyPath: availableItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2,
+        type: 2}
+    - target: {fileID: 4844748499153833499, guid: 3e8a353abbe6fd745b7a3ba836009521,
+        type: 3}
+      propertyPath: availableItems.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f804f164699dbf4f8a9fcee117e27d1,
+        type: 2}
+    - target: {fileID: 4844748499153833499, guid: 3e8a353abbe6fd745b7a3ba836009521,
+        type: 3}
+      propertyPath: availableItems.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 07a6033955ff60f408316d6f2338e168,
         type: 2}
     - target: {fileID: 7515376398754615566, guid: 3e8a353abbe6fd745b7a3ba836009521,
         type: 3}
@@ -14919,7 +14937,17 @@ PrefabInstance:
     - target: {fileID: 3208858623675735115, guid: c68265b106de29444b5a6329bf767f97,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 2785017855
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208858623675735115, guid: c68265b106de29444b5a6329bf767f97,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208858623675735115, guid: c68265b106de29444b5a6329bf767f97,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3208858624126326614, guid: c68265b106de29444b5a6329bf767f97,
         type: 3}
