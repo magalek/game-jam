@@ -20,4 +20,5 @@ MonoBehaviour:
   Items:
   - item: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2, type: 2}
     option: 0
-    succesChance: 100
+  - item: {fileID: 11400000, guid: 45c140b3941ee6f4ebcbf590091424ca, type: 2}
+    option: 0

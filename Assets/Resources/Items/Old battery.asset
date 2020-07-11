@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Old battery
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d6cfd66e3986f3b419de58f1165a28f1, type: 3}
-  firstSuccesMessage: "Poliza\u0142e\u015B baterie"
-  secondSuccesMessage: 'The battery '
+  firstSuccesMessage: 'Cyborg throw the battery '
+  secondSuccesMessage: 
   failMessage: The battery was dead, so your cyborg didn't do anyting
