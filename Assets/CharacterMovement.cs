@@ -8,8 +8,10 @@ public class CharacterMovement : MonoBehaviour
     [Header("Customizable Fields")]
     [SerializeField] [Range(10, 100)] private float speed = 10;
 
+    public bool CanMove { get; set; } = true;
+
     private void Update() {
-        Move();
+        if (CanMove) Move();
     }
 
     private void Move() {

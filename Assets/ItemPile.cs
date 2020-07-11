@@ -38,7 +38,9 @@ public class ItemPile : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E)) {
             Debug.Log("Pressed E");
-            if (CanHarvest) StartCoroutine(HarvestCoroutine());
+            if (CanHarvest) {
+                StartCoroutine(HarvestCoroutine(collision.GetComponent<CharacterMovement>()));
+            }
         }
     }
 
@@ -46,7 +48,8 @@ public class ItemPile : MonoBehaviour
         interactText.gameObject.SetActive(false);
     }
 
-    private IEnumerator HarvestCoroutine() {
+    private IEnumerator HarvestCoroutine(CharacterMovement characterMovement) {
+        characterMovement.GetComponent<CharacterMovement>().CanMove = false;
         Debug.Log("Entered coroutine");
         CanHarvest = false;
         interactText.gameObject.SetActive(false);
@@ -57,7 +60,7 @@ public class ItemPile : MonoBehaviour
         Debug.Log("Harvested");
         progressBar.fillAmount = 0;
         CanHarvest = true;
-
+        characterMovement.GetComponent<CharacterMovement>().CanMove = true;
         ItemPopup.Show();
     }
 }
