@@ -35,13 +35,14 @@ public class ItemPile : MonoBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D collision) {
-     
-        if (CanHarvest) interactText.gameObject.SetActive(true);
 
-        if (Input.GetKey(KeyCode.E)) {
-            Debug.Log("Pressed E");
-            if (CanHarvest) {
-                StartCoroutine(HarvestCoroutine(collision.gameObject));
+        if (collision.CompareTag("Player")) {
+            if (CanHarvest) interactText.gameObject.SetActive(true);
+
+            if (Input.GetKey(KeyCode.E)) {
+                if (CanHarvest) {
+                    StartCoroutine(HarvestCoroutine(collision.gameObject));
+                }
             }
         }
     }

@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     [Header("Customizable Fields")]
     [SerializeField] [Range(10, 100)] private float speed = 10;
 
-    public bool CanMove { get; set; } = true;
+    public bool CanMove { get; set; }
 
     private bool isMoving;
     private Animator animator;
