@@ -22,15 +22,18 @@ public class GameManager : MonoBehaviour
     private void Awake() {
         if (Instance == null) {
             Instance = this;
+            allEvents = Resources.LoadAll<Event>("Events").ToList();
             SceneManager.sceneLoaded += StartNewEvent;
         }
         else if (Instance != this) {
             Destroy(gameObject);
-        }
-
-        allEvents = Resources.LoadAll<Event>("Events").ToList();        
+        }         
 
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start() {
+        Timer.Ended += () => LoadScene(2);
     }
 
     public void LoadScene(int number) {
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void HideEventPanel() {
         Character.Instance.GetComponent<CharacterMovement>().CanMove = true;
+        Timer.Start();
         eventPanel.SetActive(false);
     }
 
@@ -56,13 +60,14 @@ public class GameManager : MonoBehaviour
     }
 
     private void StartNewEvent(Scene scene, LoadSceneMode mode) {
-        if (scene.buildIndex == 0) {
+        if (scene.buildIndex == 1) {
             StartNewEvent();
         }
     }
 
     private void StartNewEvent() {   
         SetEvent();
+        Timer.ResetTime();
         Character.Instance.GetComponent<CharacterMovement>().CanMove = false;
         eventPanel.SetActive(true);
         eventPanel.GetComponentInChildren<Button>().onClick.AddListener(HideEventPanel);
@@ -70,11 +75,5 @@ public class GameManager : MonoBehaviour
         TextMeshProUGUI title = eventPanel.GetComponent<EventMessage>().title;
         description.text = currentEvent.description;
         title.text = currentEvent.name;
-    }
-
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            LoadScene(1);
-        }
     }
 }

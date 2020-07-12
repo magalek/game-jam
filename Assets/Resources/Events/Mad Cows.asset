@@ -15,7 +15,7 @@ MonoBehaviour:
   description: A bunch of wild, radioactive cows escaped from Old Blanchy's farm.
     Do something!
   succesMessage: '{0} so the cows runned away from the city. Not good, not terrible. '
-  failMessage: '{0} but the cows we''re not amussed. They now developed a taste for
+  failMessage: '{0} and the cows were not amussed. They now developed a taste for
     human flesh, and ate a whole school trip.'
   eventImage: {fileID: 21300000, guid: ec8bb5063ddc7cc4ab972d602d911bf1, type: 3}
   Items:
