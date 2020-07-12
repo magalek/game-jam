@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Peanut Butter Shortage
   m_EditorClassIdentifier: 
   description: The lack of peanut butter in the city of Modar caused riots. Don't
-    let people wait for their favorite snack, do something!
+    let people wait for their favorite snack, do something! I remember that I lost
+    a whole jar in an underground garden - that was like 3 years ago.
   succesMessage: '{0} so the city is saved!'
   failMessage: People won't tolerate this anymore, the peanut butter revolution is
     upon us and the fact that {0} is unimportant.

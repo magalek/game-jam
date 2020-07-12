@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
-  m_Name: Shovel
+  m_Name: Golden pickaxe
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: f6c9bbd17abf07043ade2f5b9be63a2c, type: 3}
-  firstSuccesMessage: 'Cyborg dug a big hole '
-  secondSuccesMessage: Cyborg whacked it with the shovel
-  failMessage: Your Cyborg broke the shovel
+  sprite: {fileID: 0}
+  firstSuccesMessage: 
+  secondSuccesMessage: 
+  failMessage: Cyborg sold the pickaxe cause he needed some cash
