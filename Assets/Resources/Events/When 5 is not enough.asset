@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Recently built 6G towers have a strange effect on the opossum population
     in nearby forests - they steal all the apples from the hedgehogs. Its not like
-    we cannot live without the hedgehogs, but it still should be dealt with.
+    we cannot live without the hedgehogs, but it still should be dealt with. Stupid
+    problems require stupid solutions.
   succesMessage: 
   failMessage: '{0} and now the opossums are going wild, not only the hedgehogs are
     in danger, but now they are onto the weasels.'

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b22943f423dca34da0d2754081e2925, type: 3}
   m_Name: Mad Cows
   m_EditorClassIdentifier: 
-  description: A bunch of wild, radioactive cows escaped from Old Blanchy's farm.
-    Do something!
+  description: A bunch of wild, sick,  radioactive cows escaped from Old Blanchy's
+    farm. Do something!
   succesMessage: '{0} so the cows runned away from the city. Not good, not terrible. '
   failMessage: '{0} but the cows we''re not amussed. They now developed a taste for
     human flesh, and ate a whole school trip.'
