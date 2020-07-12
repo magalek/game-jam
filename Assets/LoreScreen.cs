@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartGameButton : MonoBehaviour
+public class LoreScreen : MonoBehaviour
 {
-    private void Awake() {
+    private void Start() {
         GetComponent<Button>().onClick.AddListener(LoadGameScene);
     }
 
     public void LoadGameScene() {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 }

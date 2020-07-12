@@ -14,10 +14,29 @@ public class GameManager : MonoBehaviour
 
     private GameObject eventPanel => GameObject.Find("Event Message Border");
 
+    public int Points {
+        get => points;
+        set {
+            points = value;
+            if (points == 5) {
+                LoadScene(3);
+                hasWon = true;
+            }
+            else if (points == -5) {
+                LoadScene(3);
+                hasWon = false;
+            }
+        }
+    }
+
     public Event currentEvent;
 
+    private int points;
+
+    public bool hasWon;
+
     private List<Event> allEvents = new List<Event>();
-    private List<Event> usedEvents = new List<Event>();
+    private List<Event> usedEvents = new List<Event>();    
 
     private void Awake() {
         if (Instance == null) {
@@ -44,6 +63,10 @@ public class GameManager : MonoBehaviour
         Character.Instance.GetComponent<CharacterMovement>().CanMove = true;
         Timer.Start();
         eventPanel.SetActive(false);
+    }
+
+    public void ExitGame() {
+        Application.Quit();
     }
 
     private void SetEvent() {

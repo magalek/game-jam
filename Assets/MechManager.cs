@@ -32,24 +32,33 @@ public class MechManager : MonoBehaviour
 
         List<Slot> usedSlots = mechContainer.slots.Where(i => i.item != null).ToList();
 
+        Item properItem = null;
+
         if (usedSlots.Count > 0) {
             bool success = false;
 
             foreach (var slot in usedSlots) {
                 success = currentEvent.Items.Any(i => i.item == slot.item);
-                if (success) break;
+
+                if (success) {
+                    properItem = slot.item;
+                    break;
+                }
             }
 
             if (success) {
-                ItemSlot itemWhichSucceded = currentEvent.Items[Random.Range(0, currentEvent.Items.Count)];
-                textObject.text = string.Format(currentEvent.succesMessage, itemWhichSucceded.option == Option.First ? usedSlots[Random.Range(0, usedSlots.Count)].item.firstSuccesMessage : usedSlots[Random.Range(0, usedSlots.Count)].item.secondSuccesMessage);
+                ItemSlot itemWhichSucceded = currentEvent.Items.FirstOrDefault(i => i.item == properItem);
+                textObject.text = string.Format(currentEvent.succesMessage, itemWhichSucceded.option == Option.First ? itemWhichSucceded.item.firstSuccesMessage : itemWhichSucceded.item.secondSuccesMessage);
+                GameManager.Instance.Points++;
             }
             else {
                 textObject.text = string.Format(currentEvent.failMessage, usedSlots[Random.Range(0, usedSlots.Count)].item.failMessage);
+                GameManager.Instance.Points--;
             }
         }
         else {
             textObject.text = string.Format(currentEvent.failMessage, "Your cyborg did nothing");
+            GameManager.Instance.Points--;
         }
     }
 }
