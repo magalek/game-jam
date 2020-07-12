@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class StartGameButton : MonoBehaviour
 {
-    private void Start() {
+    private void Awake() {
         GetComponent<Button>().onClick.AddListener(LoadGameScene);
     }
 
-    private void LoadGameScene() {
+    public void LoadGameScene() {
         SceneManager.LoadScene(4);
     }
 }
