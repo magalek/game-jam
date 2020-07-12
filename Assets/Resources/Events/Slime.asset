@@ -16,7 +16,7 @@ MonoBehaviour:
     that should be washed away.
   succesMessage: ' Hurray! The slimy monster was destroyed because {0}.'
   failMessage: ' {0} and the slimy monster swallowed a lot of things!'
-  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
+  eventImage: {fileID: 21300000, guid: dfb31420cd67dfe4fa48b7633442c9ba, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 45bf3e862691f7f4980b0f38089ef2d2, type: 2}
     option: 0

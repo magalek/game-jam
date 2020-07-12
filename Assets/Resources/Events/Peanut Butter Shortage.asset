@@ -18,7 +18,7 @@ MonoBehaviour:
   succesMessage: '{0} so the city is saved!'
   failMessage: People won't tolerate this anymore, the peanut butter revolution is
     upon us and the fact that {0} is unimportant.
-  eventImage: {fileID: 21300000, guid: 8fd971333d232a247ad9c32a6967f91b, type: 3}
+  eventImage: {fileID: 21300000, guid: 28cdef04850428046aad7313367f34c3, type: 3}
   Items:
   - item: {fileID: 11400000, guid: 17099adfe55159b4ebacc772fddd1672, type: 2}
     option: 0
