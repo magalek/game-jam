@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Dirty pyjamas
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7869efcc794ac974a8a040aea1e97089, type: 3}
   firstSuccesMessage: 
   secondSuccesMessage: 
   failMessage: Cyborg in dirty pyjamas is some "out of the box" thinking

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Plant
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0eacf4bb9a1a77e48bd7b5f1a3fccd48, type: 3}
   firstSuccesMessage: The plant is a strong allergen
   secondSuccesMessage: 
   failMessage: It's just a plant

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Glue
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: dbc5b62ee70b0d34d843ec1c0ccb075b, type: 3}
   firstSuccesMessage: 
   secondSuccesMessage: 
   failMessage: Cyborg is not very smart - he ate the whole package of glue

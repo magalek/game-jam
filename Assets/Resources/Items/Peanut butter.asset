@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aecdf5fe8097c34abb0e43b2a78601f, type: 3}
   m_Name: Peanut butter
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 3e871ed132972a546aae76689a993522, type: 3}
+  sprite: {fileID: 21300000, guid: ef3a31bd619a28c428f457637186167c, type: 3}
   firstSuccesMessage: Cyborg gave the brown jar to the people. Now they call him
     "Peanut butter Jesus"
   secondSuccesMessage: 
