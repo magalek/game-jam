@@ -43,13 +43,16 @@ public class MechManager : MonoBehaviour
             if (success) {
                 ItemSlot itemWhichSucceded = currentEvent.Items[Random.Range(0, currentEvent.Items.Count)];
                 textObject.text = string.Format(currentEvent.succesMessage, itemWhichSucceded.option == Option.First ? usedSlots[Random.Range(0, usedSlots.Count)].item.firstSuccesMessage : usedSlots[Random.Range(0, usedSlots.Count)].item.secondSuccesMessage);
+                GameManager.Instance.Points++;
             }
             else {
                 textObject.text = string.Format(currentEvent.failMessage, usedSlots[Random.Range(0, usedSlots.Count)].item.failMessage);
+                GameManager.Instance.Points--;
             }
         }
         else {
             textObject.text = string.Format(currentEvent.failMessage, "Your cyborg did nothing");
+            GameManager.Instance.Points--;
         }
     }
 }
