@@ -12,5 +12,6 @@ public class LoreScreen : MonoBehaviour
 
     public void LoadGameScene() {
         SceneManager.LoadScene(1);
+       // audioSource.Play(Dramatic1);
     }
 }
